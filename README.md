@@ -4,6 +4,21 @@ This repository presents a simple approach to training conditional flow matching
 
 The training is conditioned to enable the model to generate either the ordinary vector field induced by the standard CFM loss or an integrated vector field. This is achieved by introducing a flag during training that signals to the model which target to learn.
 
+### Visualizing the Flow Trajectories
+
+Here is a comparison between the model trained with the standard CFM loss versus the model trained with our integrated target.
+
+**Standard Flow (Instantaneous Target)**
+*The model predicts the direct vector field.*
+
+![Standard Flow Trajectories](flow_match.jpeg)
+
+---
+
+**Integrated Flow (Heun Solver Target)**
+*The model predicts a more stable, integrated vector field.*
+
+![Integrated Flow Trajectories](flow_match_integrated.jpeg)
 ---
 
 ### Background: Conditional Flow Matching
