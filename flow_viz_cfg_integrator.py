@@ -366,7 +366,7 @@ def plot_trajectories(trajectory, title, file_path, ghost_data):
 
 
 if __name__ == "__main__":
-    BASE_EPOCHS = 300
+    BASE_EPOCHS = 3000
     P_INTEGRATE = 0.5
     torch.manual_seed(0)
     np.random.seed(0)
